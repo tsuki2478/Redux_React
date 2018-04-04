@@ -1,0 +1,293 @@
+html,
+body,
+.root {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+}
+
+body,
+.app {
+    background: wheat;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    max-width: 1110px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 8px;
+}
+
+.myName {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.select {
+    font-size: 18px;
+    color: peru;
+}
+
+/* 返回按钮 */
+
+.close-create-contact {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("./arrow-back.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    font-size: 0;
+}
+
+/* Create页面 */
+
+.create-contact-form {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.create-contact-details {
+    margin-left: 20px;
+}
+
+.text {
+    height: 300px;
+}
+
+.none {
+    display: none;
+}
+
+.voteScore {
+    display: inline-grid;
+}
+
+.button {
+    background: none;
+    border: none;
+}
+
+.button svg {
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+
+.Posts-title-font:hover {
+    cursor: Pointer;
+}
+
+.Posts-voteScore-font {
+    justify-content: space-around;
+    width: 50px;
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+.create-contact-details textarea {
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: 0;
+}
+
+.create-contact-details input {
+    width: 50%;
+    height: 30px;
+}
+
+.create-contact-details select {
+    width: 50%;
+    margin-top: 30px;
+}
+
+.create-contact-details button {
+    margin-top: 20px;
+    background: #ccc;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: inherit;
+    border: none;
+    outline: 0;
+    width: 100%;
+}
+
+/* Posts */
+
+.edit {
+    padding-right: 5px;
+}
+
+.Posts {
+    font-size: 18px;
+    color: steelblue;
+}
+
+.Posts-li {
+    list-style: none;
+}
+
+.Posts-Grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Posts-Title {
+    padding: 10px 5px 10px 0;
+    width: 390px;
+    display: inline-flex;
+}
+
+.Posts-author {
+    padding: 10px 5px 10px 5px;
+    width: 120px;
+}
+
+.Posts-Category {
+    padding: 10px 5px 10px 5px;
+    width: 100px;
+}
+
+.Posts-CommentCount {
+    padding: 0 10px 0 10px;
+    width: 100px;
+    display: inline-flex;
+}
+
+/* 添加按钮 */
+
+.add-contact {
+    display: block;
+    width: 73px;
+    height: 73px;
+    background: wheat;
+    float: right;
+    background-image: url('./person-add.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 28px;
+    font-size: 0;
+}
+
+.add-contact::after {
+    clear: both;
+}
+
+/* 排序 */
+
+.rank {
+    float: right;
+    font-size: 18px;
+    color: peru;
+}
+
+.rank::after {
+    clear: both;
+}
+
+/* postDetail */
+.Posts-content {
+    border-bottom: 1px solid black;
+    
+}
+.PostDetail-title {
+    margin: 0;
+    font-size: 30px;
+    color: purple;
+    padding: 10px;
+    display: inline-flex;
+}
+.PostDetail-body {
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid black;
+    text-align: justify;
+    display: inline-flex;
+    line-height: 2;
+}
+
+.PostDetail-ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+.PostDetail-li {
+width: 200px;
+padding: 20px 0 20px 0;
+}
+.PostDetail-p1 {
+    display: flex;
+    justify-content: center;
+}
+.PostDetail-p {
+    display: flex;
+    justify-content: center;
+    color: #0099cc
+}
+.Vote-All {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.Vote-content{
+    margin-left: 30px;
+    min-height: 200px;
+    padding: 20px
+}
+
+.add{
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute;
+    top: 40px;
+    left: 200px;
+    right: 200px;
+    bottom: 40px;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,.24), 0 3px 12px 0 rgba(0,0,0,.12);
+    min-width: 500px;
+  }
+  .Vote-li{
+    list-style: none;
+    width: 100px;
+  }
+  .Vote-ul{
+    display: flex;
+    margin: 0;
+    justify-content: flex-end;
+    
+  }
+  .button  svg {
+    color: burlywood;
+  }
+  .vote-li-voteScore {
+    display: flex;
+    align-items: center;
+  }
